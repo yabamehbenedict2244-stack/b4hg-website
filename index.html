@@ -1,70 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>B4HG Company Limited</title>
-<style>
+<title>B4HG Company Limited</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"><style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #0f172a;
   color: white;
 }
+
 header {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 60px 20px;
-}
-h1 { font-size: 40px; }
-.section {
-  padding: 40px 20px;
-  text-align: center;
-}
-.card {
-  background: #1e293b;
-  margin: 10px;
   padding: 20px;
-  border-radius: 15px;
 }
+
+header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+header p {
+  max-width: 600px;
+  color: #e2e8f0;
+}
+
 button {
-  padding: 12px 20px;
+  margin-top: 20px;
+  padding: 14px 25px;
   border: none;
   background: #22c55e;
   color: white;
-  border-radius: 10px;
+  border-radius: 30px;
   font-size: 16px;
+  cursor: pointer;
 }
-</style>
-</head>
 
-<body>
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
 
-<header>
+h2 {
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+}
+
+.contact {
+  background: #020617;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+}
+</style></head><body><header>
   <h1>B4HG Company Limited</h1>
-  <p>Strong. Reliable. Industrial Solutions.</p>
+  <p>Premium industrial machines, high-pressure hoses, and reliable engineering solutions you can trust.</p>
   <button onclick="window.location.href='https://wa.me/233244436110'">
-    Contact on WhatsApp
+    Chat on WhatsApp
   </button>
-</header>
-
-<div class="section">
+</header><section class="section">
   <h2>Our Services</h2>
-  <div class="card">Industrial Machine Supply</div>
-  <div class="card">Hose Installation & Maintenance</div>
-  <div class="card">Engineering Services</div>
-</div>
-
-<div class="section">
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
+      <h3>Industrial Machine Supply</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601132359864-c974e79890ac">
+      <h3>Hose Installation & Maintenance</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+      <h3>Engineering Services</h3>
+    </div>
+  </div>
+</section><section class="section">
   <h2>Our Products</h2>
-  <div class="card">Industrial Machines</div>
-  <div class="card">High Pressure Hoses</div>
-  <div class="card">Fittings & Accessories</div>
-</div>
-
-<div class="section">
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1598257006626-48b0c252070d">
+      <h3>Industrial Machines</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1611095564983-1a0cfd9b6d4c">
+      <h3>High Pressure Hoses</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581091870627-3d3e3d1d5b38">
+      <h3>Fittings & Accessories</h3>
+    </div>
+  </div>
+</section><section class="section contact">
   <h2>Contact Us</h2>
-  <p>+233 244 436 110</p>
-</div>
-
-</body>
+  <p>Call or WhatsApp us today</p>
+  <h3>+233 244 436 110</h3>
+</section><footer>
+  © 2026 B4HG Company Limited. All rights reserved.
+</footer></body>
 </html>
