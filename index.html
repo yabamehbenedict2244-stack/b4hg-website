@@ -2,19 +2,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>B4HG Company Limited - Global Industrial Solutions</title>
+<title>B4HG Company Limited - Elite Global Brand</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 body{background:#020617;color:#fff}header{position:fixed;width:100%;top:0;display:flex;justify-content:space-between;padding:20px 40px;background:rgba(0,0,0,0.9);z-index:100} nav a{margin-left:20px;color:#fff;text-decoration:none;font-weight:500}
 
-.hero{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4') center/cover} .hero h1{font-size:55px} .hero p{margin-top:15px;opacity:.85} .btn{margin-top:25px;display:inline-block;padding:14px 30px;background:#0ea5e9;border-radius:8px;color:#fff;text-decoration:none}
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:#000} .hero h1{font-size:55px} .hero p{margin-top:15px;opacity:.85} .btn{margin-top:25px;display:inline-block;padding:14px 30px;background:#0ea5e9;border-radius:8px;color:#fff;text-decoration:none}
 
-.section{padding:90px 40px;text-align:center} .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin-top:30px} .card{background:#0f172a;padding:25px;border-radius:15px}
+.section{padding:100px 40px;text-align:center} .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
 
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px} .gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px}
-
-form{max-width:500px;margin:auto;display:flex;flex-direction:column;gap:15px} input,textarea{padding:12px;border:none;border-radius:6px} button{padding:12px;background:#0ea5e9;border:none;color:#fff;border-radius:6px}
+/* CROPPED IMAGE STYLE */ .crop{ width:100%; height:250px; overflow:hidden; border-radius:12px; position:relative; } .crop img{ width:100%; height:100%; object-fit:cover; object-position:center; }
 
 footer{background:#000;padding:30px;text-align:center} .whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;padding:15px;border-radius:50%;color:#fff;text-decoration:none} </style>
 
@@ -23,46 +21,32 @@ footer{background:#000;padding:30px;text-align:center} .whatsapp{position:fixed;
 <h2>B4HG Company Limited</h2>
 <nav>
 <a href="#">Home</a>
-<a href="#services">Services</a>
 <a href="#products">Products</a>
-<a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
 </header><section class="hero">
 <div>
-<h1>Global Industrial Solutions</h1>
-<p>Hydraulic Hoses • Oil Hoses • Industrial Fittings • Machinery</p>
+<h1>Premium Hydraulic Hose Solutions</h1>
+<p>Oil Hoses • Industrial Hoses • Hydraulic Fittings</p>
 <a href="#contact" class="btn">Request Quote</a>
 </div>
-</section><section class="section" id="services">
-<h2>Our Services</h2>
-<div class="cards">
-<div class="card"><h3>Hydraulic Hoses</h3><p>High-pressure and durable hoses</p></div>
-<div class="card"><h3>Oil Hoses</h3><p>Reliable petroleum-grade hoses</p></div>
-<div class="card"><h3>Industrial Fittings</h3><p>Connectors, valves and accessories</p></div>
-</div>
 </section><section class="section" id="products">
-<h2>Products</h2>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12">
-<img src="https://images.unsplash.com/photo-1601132359864-c974e79890ac">
-<img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df">
-<img src="https://images.unsplash.com/photo-1581091870622-6c47b0b0c9c4">
-</div>
-</section><section class="section" id="about">
-<h2>About B4HG</h2>
-<p>B4HG Company Limited is a trusted global supplier of industrial hoses, oil hoses, fittings and machinery. Led by Mr. Yabameh K. Bright, we deliver quality, reliability and innovation.</p>
+<h2>Our Hose Products</h2>
+<div class="gallery"><div class="crop">
+<img src="images/hose1.jpg" alt="Hydraulic Hose">
+</div><div class="crop">
+<img src="images/hose2.jpg" alt="Oil Hose">
+</div><div class="crop">
+<img src="images/hose3.jpg" alt="Industrial Hose">
+</div><div class="crop">
+<img src="images/hose4.jpg" alt="Hydraulic Hose">
+</div></div>
 </section><section class="section" id="contact">
-<h2>Request a Quote</h2>
-<form action="https://formsubmit.co/your@email.com" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" placeholder="What do you need?"></textarea>
-<button type="submit">Send Request</button>
-</form>
-<p style="margin-top:20px">📞 +233 244 436 110</p>
+<h2>Contact Us</h2>
+<p>📞 +233 244 436 110</p>
+<a href="tel:+233244436110" class="btn">Call Now</a>
 </section><footer>
-<p>© 2026 B4HG Company Limited | Global Industrial Brand</p>
+<p>© 2026 B4HG Company Limited | Elite Industrial Brand</p>
 </footer><a href="https://wa.me/233244436110" class="whatsapp">💬</a>
 
 </body>
