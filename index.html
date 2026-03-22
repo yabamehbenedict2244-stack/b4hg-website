@@ -1,250 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>B4HG Company Limited</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B4HG Company Limited</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }body { background: #0f172a; color: white; }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins', sans-serif;
+header {
+  background: linear-gradient(135deg, #0ea5e9, #1e3a8a);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-body{
-  background:#f5f7fa;
-  color:#333;
+header h1 { font-size: 24px; }
+
+nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-/* HEADER */
-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 25px;
-  background:white;
-  box-shadow:0 2px 10px rgba(0,0,0,0.1);
-  position:sticky;
-  top:0;
-  z-index:1000;
+.hero {
+  padding: 80px 40px;
+  text-align: center;
+  background: linear-gradient(to right, #020617, #0f172a);
 }
 
-.logo{
-  font-size:24px;
-  font-weight:700;
-  color:#d60000;
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
-.menu{
-  font-size:24px;
-  cursor:pointer;
+.hero p {
+  font-size: 18px;
+  opacity: 0.8;
 }
 
-/* HERO */
-.hero{
-  height:90vh;
-  background:url('images/hero.jpg') center/cover no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:white;
-  position:relative;
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+  background: #0ea5e9;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-.hero::after{
-  content:'';
-  position:absolute;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.6);
+.section {
+  padding: 60px 40px;
+  text-align: center;
 }
 
-.hero-content{
-  position:relative;
-  z-index:2;
+.section h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 
-.hero h1{
-  font-size:40px;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-.hero p{
-  margin:15px 0;
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
-.btn{
-  padding:12px 25px;
-  background:#f4b400;
-  border:none;
-  color:white;
-  border-radius:5px;
-  cursor:pointer;
+.card h4 { margin-bottom: 10px; }
+
+footer {
+  background: #020617;
+  padding: 30px;
+  text-align: center;
+  margin-top: 40px;
 }
 
-/* SECTION */
-.section{
-  padding:60px 20px;
-  text-align:center;
-}
+footer p { opacity: 0.7; }
 
-.section h2{
-  margin-bottom:20px;
-}
-
-/* SERVICES */
-.services{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:white;
-  padding:20px;
-  border-radius:10px;
-  box-shadow:0 5px 20px rgba(0,0,0,0.1);
-}
-
-.card img{
-  width:100%;
-  border-radius:10px;
-}
-
-.card h3{
-  margin:15px 0;
-}
-
-/* STATS */
-.stats{
-  background:#1f6fa5;
-  color:white;
-  display:flex;
-  justify-content:space-around;
-  flex-wrap:wrap;
-}
-
-.stat{
-  padding:20px;
-}
-
-.stat h1{
-  font-size:40px;
-}
-
-/* CONTACT */
-.contact{
-  background:#222;
-  color:white;
-}
-
-.contact p{
-  margin:10px 0;
-}
-
-/* FOOTER */
-footer{
-  background:#0c6a8c;
-  color:white;
-  text-align:center;
-  padding:15px;
-}
-</style>
-
+  </style>
 </head>
-<body>
-
-<!-- HEADER -->
-<header>
-  <div class="logo">B4HG</div>
-  <div class="menu">☰</div>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>Premium Hydraulic Solutions</h1>
-    <p>Reliable • Durable • Industrial Excellence</p>
-    <button class="btn">Contact Us</button>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="section">
-  <h2>About B4HG Company Limited</h2>
-  <p>
-    We specialize in high-quality hydraulic hoses, industrial equipment,
-    and engineering solutions designed for performance and durability.
-  </p>
-</section>
-
-<!-- SERVICES -->
-<section class="section">
-  <h2>Our Products</h2>
-
-  <div class="services">
-
+<body><header>
+  <h1>B4HG Company Limited</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><section class="hero">
+  <h2>🚀 Building the Future with Excellence</h2>
+  <p>We don’t just deliver services — we create lasting solutions.</p>
+  <a href="#contact" class="btn">Contact Us</a>
+</section><section class="section" id="services">
+  <h3>Our Services</h3>
+  <div class="cards">
     <div class="card">
-      <img src="images/hydraulic.jpg">
-      <h3>Hydraulic Hoses</h3>
-      <p>Top-quality hoses for industrial and mobile applications.</p>
+      <h4>🔧 Industrial Solutions</h4>
+      <p>Premium hoses and industrial systems built for performance.</p>
     </div>
-
     <div class="card">
-      <img src="images/industrial.jpg">
-      <h3>Industrial Hoses</h3>
-      <p>Air, water, oil, chemical and food-grade hoses.</p>
+      <h4>⚙️ Machinery & Equipment</h4>
+      <p>Durable machines designed for long-term reliability.</p>
     </div>
-
     <div class="card">
-      <img src="images/oilgas.jpg">
-      <h3>Oil & Gas Hoses</h3>
-      <p>Built for petroleum and high-pressure fluid systems.</p>
+      <h4>💯 Quality Assurance</h4>
+      <p>Trusted quality with consistent performance delivery.</p>
     </div>
-
-    <div class="card">
-      <img src="images/pneumatic.jpg">
-      <h3>Pneumatic Hoses</h3>
-      <p>Reliable air hoses for workshops and industries.</p>
-    </div>
-
   </div>
-</section>
-
-<!-- STATS -->
-<section class="stats">
-  <div class="stat">
-    <h1>230</h1>
-    <p>Projects</p>
-  </div>
-
-  <div class="stat">
-    <h1>2</h1>
-    <p>Locations</p>
-  </div>
-
-  <div class="stat">
-    <h1>18</h1>
-    <p>Employees</p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section contact">
-  <h2>Contact Us</h2>
-  <p>📍 6 Paa Grant Aly, Takoradi, Ghana</p>
-  <p>📧 info@b4hg.com | b4hydraulics@yahoo.com</p>
-  <p>📞 +233 24 443 6110</p>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  © 2026 B4HG Company Limited
-</footer>
-
-</body>
+</section><section class="section" id="about">
+  <h3>About Us</h3>
+  <p>B4HG Company Limited is committed to strength, reliability, and innovation. Under the leadership of Mr. Yabameh K. Bright, we continue to set the standard for excellence and professionalism in Ghana's industrial sector.</p>
+</section><section class="section" id="contact">
+  <h3>Contact Us</h3>
+  <p>📞 +233 244 436 110</p>
+  <p>📍 Delivering quality you can trust</p>
+</section><footer>
+  <p>© 2026 B4HG Company Limited | Where Quality Meets Reliability</p>
+</footer></body>
 </html>
