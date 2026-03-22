@@ -8,212 +8,187 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
 
-body{
-    background:#0f172a;
-    color:#fff;
-}
+body{background:#0f172a;color:#fff;scroll-behavior:smooth;}
 
-/* NAVBAR */
+/* NAV */
 nav{
-    display:flex;
-    justify-content:space-between;
-    padding:20px 10%;
-    background:rgba(0,0,0,0.7);
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:1000;
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:#020617;
+position:fixed;width:100%;z-index:1000;
 }
 
-nav h1{
-    color:#38bdf8;
-}
-
-nav a{
-    color:#fff;
-    margin-left:20px;
-    text-decoration:none;
-    font-weight:500;
-}
+nav h1{color:#38bdf8;}
+nav a{color:#fff;margin-left:20px;text-decoration:none;}
 
 /* HERO */
 .hero{
-    height:100vh;
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url('https://images.unsplash.com/photo-1581091870627-3c1c2b6c7a59');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:0 20px;
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url('https://images.unsplash.com/photo-1581091870627-3c1c2b6c7a59');
+background-size:cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 }
 
-.hero h2{
-    font-size:3rem;
-}
+.hero h2{font-size:3rem;animation:fade 2s ease;}
+.hero p{margin:20px 0;}
 
-.hero p{
-    margin:20px 0;
-    font-size:1.2rem;
+@keyframes fade{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;}
 }
 
 .btn{
-    padding:12px 25px;
-    background:#38bdf8;
-    border:none;
-    color:#000;
-    font-weight:bold;
-    cursor:pointer;
+padding:12px 25px;
+background:#38bdf8;
+border:none;
+cursor:pointer;
+font-weight:bold;
 }
 
-/* SECTION */
-section{
-    padding:80px 10%;
-}
-
-.title{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:2rem;
-}
+/* SECTIONS */
+section{padding:80px 10%;}
+.title{text-align:center;margin-bottom:40px;font-size:2rem;}
 
 /* SERVICES */
 .services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
-    background:#1e293b;
-    padding:25px;
-    border-radius:10px;
-    transition:0.3s;
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-10px);
-}
+.card:hover{transform:translateY(-10px);}
 
 /* GALLERY */
 .gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-    gap:15px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
 }
 
 .gallery img{
-    width:100%;
-    border-radius:10px;
+width:100%;
+border-radius:10px;
+height:250px;
+object-fit:cover;
 }
 
 /* CONTACT */
-.contact{
-    text-align:center;
-}
+.contact{text-align:center;}
 
-.contact h3{
-    font-size:1.5rem;
-    margin-bottom:10px;
+/* WHATSAPP BUTTON */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+color:white;
+text-decoration:none;
 }
 
 /* FOOTER */
 footer{
-    background:#020617;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
-    font-size:0.9rem;
-    color:#94a3b8;
+background:#020617;
+text-align:center;
+padding:20px;
+color:#94a3b8;
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav>
-    <h1>B4HG</h1>
-    <div>
-        <a href="#services">Services</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </div>
+<h1>B4HG</h1>
+<div>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
-    <div>
-        <h2>Powering Industry. Delivering Excellence.</h2>
-        <p>Premium Hydraulic Hoses, Industrial Equipment & Engineering Solutions</p>
-        <button class="btn">Contact Us</button>
-    </div>
+<div>
+<h2>Powering Industry. Delivering Excellence.</h2>
+<p>Premium Hydraulic Hoses & Industrial Solutions</p>
+<button class="btn" onclick="scrollToContact()">Contact Us</button>
+</div>
 </div>
 
-<!-- SERVICES -->
 <section id="services">
-    <h2 class="title">Our Services</h2>
-    <div class="services">
+<h2 class="title">Our Services</h2>
+<div class="services">
 
-        <div class="card">
-            <h3>Hydraulic Hose Supply</h3>
-            <p>High-performance hoses built for durability and pressure resistance.</p>
-        </div>
+<div class="card">
+<h3>Hydraulic Hose Supply</h3>
+<p>High-quality durable hoses for all industries.</p>
+</div>
 
-        <div class="card">
-            <h3>Hose Crimping Services</h3>
-            <p>Professional hose assembly using advanced crimping machines.</p>
-        </div>
+<div class="card">
+<h3>Hose Crimping</h3>
+<p>Precision crimping using advanced machines.</p>
+</div>
 
-        <div class="card">
-            <h3>Industrial Equipment</h3>
-            <p>Heavy-duty machines and fittings for all industrial needs.</p>
-        </div>
+<div class="card">
+<h3>Industrial Equipment</h3>
+<p>Heavy-duty machines and fittings.</p>
+</div>
 
-        <div class="card">
-            <h3>Maintenance & Repairs</h3>
-            <p>Reliable servicing to keep your operations running smoothly.</p>
-        </div>
+<div class="card">
+<h3>Maintenance</h3>
+<p>Professional repair and servicing.</p>
+</div>
 
-    </div>
+</div>
 </section>
 
-<!-- GALLERY -->
 <section id="gallery">
-    <h2 class="title">Our Work</h2>
-    <div class="gallery">
+<h2 class="title">Our Work</h2>
+<div class="gallery">
 
-        <!-- Replace these with your uploaded images -->
-        <img src="your-image-1.jpg">
-        <img src="your-image-2.jpg">
-        <img src="your-image-3.jpg">
-        <img src="your-image-4.jpg">
-        <img src="your-image-5.jpg">
+<!-- PUT YOUR REAL IMAGES HERE -->
+<img src="image1.jpg">
+<img src="image2.jpg">
+<img src="image3.jpg">
+<img src="image4.jpg">
+<img src="image5.jpg">
 
-    </div>
+</div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="contact">
-    <h2 class="title">Contact Us</h2>
-    <h3>📞 +233244436110</h3>
-    <p>Reliable • Efficient • Professional</p>
+<h2 class="title">Contact Us</h2>
+<p>📞 +233244436110</p>
+<p>Reliable • Efficient • Professional</p>
 </section>
 
-<!-- FOOTER -->
+<a href="https://wa.me/233244436110" class="whatsapp">💬</a>
+
 <footer>
-    © 2026 B4HG Company Limited. All Rights Reserved. <br>
-    Designed for Global Industrial Solutions.
+© 2026 B4HG Company Limited. All Rights Reserved.
 </footer>
+
+<script>
+function scrollToContact(){
+document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+}
+</script>
 
 </body>
 </html>
