@@ -5,132 +5,245 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>B4HG Company Limited</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0a0f1c;
-    color: white;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-    background: rgba(0,0,0,0.85);
-    position: fixed;
-    width: 100%;
+body{
+  background:#f5f7fa;
+  color:#333;
 }
 
-nav h1 { color: gold; }
-
-nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 25px;
+  background:white;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  position:sticky;
+  top:0;
+  z-index:1000;
 }
 
-.hero {
-    height: 100vh;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.logo{
+  font-size:24px;
+  font-weight:700;
+  color:#d60000;
 }
 
-.section { padding: 80px 50px; }
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+.menu{
+  font-size:24px;
+  cursor:pointer;
 }
 
-.card {
-    background: #111;
-    border-radius: 10px;
-    overflow: hidden;
+/* HERO */
+.hero{
+  height:90vh;
+  background:url('images/hero.jpg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  position:relative;
 }
 
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.hero::after{
+  content:'';
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
 }
 
-.contact {
-    text-align: center;
-    background: #111;
-    padding: 50px;
+.hero-content{
+  position:relative;
+  z-index:2;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: black;
+.hero h1{
+  font-size:40px;
+}
+
+.hero p{
+  margin:15px 0;
+}
+
+.btn{
+  padding:12px 25px;
+  background:#f4b400;
+  border:none;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+/* SECTION */
+.section{
+  padding:60px 20px;
+  text-align:center;
+}
+
+.section h2{
+  margin-bottom:20px;
+}
+
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card img{
+  width:100%;
+  border-radius:10px;
+}
+
+.card h3{
+  margin:15px 0;
+}
+
+/* STATS */
+.stats{
+  background:#1f6fa5;
+  color:white;
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}
+
+.stat{
+  padding:20px;
+}
+
+.stat h1{
+  font-size:40px;
+}
+
+/* CONTACT */
+.contact{
+  background:#222;
+  color:white;
+}
+
+.contact p{
+  margin:10px 0;
+}
+
+/* FOOTER */
+footer{
+  background:#0c6a8c;
+  color:white;
+  text-align:center;
+  padding:15px;
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<nav>
-    <h1>B4HG</h1>
-    <div>
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
+<!-- HEADER -->
+<header>
+  <div class="logo">B4HG</div>
+  <div class="menu">☰</div>
+</header>
 
-<div class="hero">
-    <div>
-        <h2>Powering Industry. Delivering Excellence.</h2>
-        <p>Premium Hydraulic Hoses & Equipment</p>
-    </div>
-</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Premium Hydraulic Solutions</h1>
+    <p>Reliable • Durable • Industrial Excellence</p>
+    <button class="btn">Contact Us</button>
+  </div>
+</section>
 
+<!-- ABOUT -->
 <section class="section">
-    <h2 style="text-align:center;color:gold;">Our Services</h2>
-    <div class="grid">
-
-        <div class="card">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=">
-            <h3 style="padding:15px;">Hydraulic Hose Assembly</h3>
-        </div>
-
-        <div class="card">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=">
-            <h3 style="padding:15px;">Precision Fittings</h3>
-        </div>
-
-        <div class="card">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=">
-            <h3 style="padding:15px;">Industrial Machines</h3>
-        </div>
-
-    </div>
+  <h2>About B4HG Company Limited</h2>
+  <p>
+    We specialize in high-quality hydraulic hoses, industrial equipment,
+    and engineering solutions designed for performance and durability.
+  </p>
 </section>
 
+<!-- SERVICES -->
 <section class="section">
-    <h2 style="text-align:center;color:gold;">About Us</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-        B4HG Company Limited specializes in hydraulic hoses, industrial fittings,
-        and heavy-duty machinery solutions. We deliver reliable, efficient,
-        and high-performance services tailored to industrial needs.
-    </p>
+  <h2>Our Products</h2>
+
+  <div class="services">
+
+    <div class="card">
+      <img src="images/hydraulic.jpg">
+      <h3>Hydraulic Hoses</h3>
+      <p>Top-quality hoses for industrial and mobile applications.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/industrial.jpg">
+      <h3>Industrial Hoses</h3>
+      <p>Air, water, oil, chemical and food-grade hoses.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/oilgas.jpg">
+      <h3>Oil & Gas Hoses</h3>
+      <p>Built for petroleum and high-pressure fluid systems.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/pneumatic.jpg">
+      <h3>Pneumatic Hoses</h3>
+      <p>Reliable air hoses for workshops and industries.</p>
+    </div>
+
+  </div>
 </section>
 
-<section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>📞 +233 244 436 110</p>
-    <p>Reliable • Efficient • Professional</p>
+<!-- STATS -->
+<section class="stats">
+  <div class="stat">
+    <h1>230</h1>
+    <p>Projects</p>
+  </div>
+
+  <div class="stat">
+    <h1>2</h1>
+    <p>Locations</p>
+  </div>
+
+  <div class="stat">
+    <h1>18</h1>
+    <p>Employees</p>
+  </div>
 </section>
 
+<!-- CONTACT -->
+<section class="section contact">
+  <h2>Contact Us</h2>
+  <p>📍 6 Paa Grant Aly, Takoradi, Ghana</p>
+  <p>📧 info@b4hg.com | b4hydraulics@yahoo.com</p>
+  <p>📞 +233 24 443 6110</p>
+</section>
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 B4HG Company Limited</p>
+  © 2026 B4HG Company Limited
 </footer>
 
 </body>
