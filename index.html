@@ -13,15 +13,13 @@ body {
     color: white;
 }
 
-/* NAVBAR */
 nav {
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.85);
     position: fixed;
     width: 100%;
-    z-index: 1000;
 }
 
 nav h1 { color: gold; }
@@ -32,28 +30,17 @@ nav a {
     text-decoration: none;
 }
 
-/* HERO */
 .hero {
     height: 100vh;
-    background: url('data:image/jpeg;base64,REPLACE_HERO') center/cover no-repeat;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.hero h2 { font-size: 3rem; }
-.hero p { font-size: 1.2rem; }
-
-/* SECTION */
 .section { padding: 80px 50px; }
-.section h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: gold;
-}
 
-/* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -64,10 +51,7 @@ nav a {
     background: #111;
     border-radius: 10px;
     overflow: hidden;
-    transition: 0.3s;
 }
-
-.card:hover { transform: scale(1.05); }
 
 .card img {
     width: 100%;
@@ -75,7 +59,6 @@ nav a {
     object-fit: cover;
 }
 
-/* CONTACT */
 .contact {
     text-align: center;
     background: #111;
@@ -105,52 +88,34 @@ footer {
 <div class="hero">
     <div>
         <h2>Powering Industry. Delivering Excellence.</h2>
-        <p>Premium Hydraulic Hoses & Industrial Equipment</p>
+        <p>Premium Hydraulic Hoses & Equipment</p>
     </div>
 </div>
 
-<section id="services" class="section">
-    <h2>Our Services</h2>
+<section class="section">
+    <h2 style="text-align:center;color:gold;">Our Services</h2>
     <div class="grid">
+
         <div class="card">
-            <img src="data:image/jpeg;base64,REPLACE_IMG1">
-            <h3>Hydraulic Hose Assembly</h3>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=">
+            <h3 style="padding:15px;">Hydraulic Hose Assembly</h3>
         </div>
 
         <div class="card">
-            <img src="data:image/jpeg;base64,REPLACE_IMG2">
-            <h3>Precision Fittings</h3>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=">
+            <h3 style="padding:15px;">Precision Fittings</h3>
         </div>
 
         <div class="card">
-            <img src="data:image/jpeg;base64,REPLACE_IMG3">
-            <h3>Industrial Machines</h3>
-        </div>
-    </div>
-</section>
-
-<section id="gallery" class="section">
-    <h2>Our Work</h2>
-    <div class="grid">
-        <div class="card">
-            <img src="data:image/jpeg;base64,REPLACE_IMG4">
-            <h3>Workshop Setup</h3>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=">
+            <h3 style="padding:15px;">Industrial Machines</h3>
         </div>
 
-        <div class="card">
-            <img src="data:image/jpeg;base64,REPLACE_IMG5">
-            <h3>Heavy Duty Hose</h3>
-        </div>
-
-        <div class="card">
-            <img src="data:image/jpeg;base64,REPLACE_IMG2">
-            <h3>Quality Components</h3>
-        </div>
     </div>
 </section>
 
 <section class="section">
-    <h2>About Us</h2>
+    <h2 style="text-align:center;color:gold;">About Us</h2>
     <p style="text-align:center; max-width:700px; margin:auto;">
         B4HG Company Limited specializes in hydraulic hoses, industrial fittings,
         and heavy-duty machinery solutions. We deliver reliable, efficient,
